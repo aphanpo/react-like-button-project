@@ -5,23 +5,15 @@ import './App.css';
 class App extends Component {
   state = {
     count: 0,
-    like: "like"
+    like : "likes"
   }
 
   handleClick = (e) => {
-    this.setState (e => {
-      return {count: e.count +1}
-    })
-    if(this.state.count === 0){
-      this.setState(e => {
-        return {like : e.like= "like"}
-    })
-   } else {
-     this.setState (e => {
-     return { like: e.like = "likes"}
+    this.setState ({
+      count: this.state.count +1,
+      like: this.state.count === 0 ? "like" : "likes"
     })
   }
-}
 
   
 
