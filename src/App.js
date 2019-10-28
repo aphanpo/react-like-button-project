@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
   state = {
     count: 0,
-    like: "Like"
+    like: "like"
   }
 
   handleClick = (e) => {
@@ -14,11 +14,11 @@ class App extends Component {
     })
     if(this.state.count === 0){
       this.setState(e => {
-        return {like : e.like= "Like"}
+        return {like : e.like= "like"}
     })
    } else {
      this.setState (e => {
-     return { like: e.like = "Likes"}
+     return { like: e.like = "likes"}
     })
   }
 }
